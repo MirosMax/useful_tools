@@ -3,7 +3,7 @@ def size_to_large(size):
     Функция принимает размер файла в байтах и возвращает строку с округленным значением в больших единицах,
     округленных до целого значения
 
-    Значения:
+    Единицы измерения:
     1 KB (Kilobyte) = 1,024 Bytes
     1 MB (Megabyte) = 1024 KB = 1,048,576 Bytes
     1 GB (Gigabyte) = 1024 MB = 1,048,576 KB = 1,073,741,824 Bytes
@@ -23,4 +23,8 @@ def size_to_large(size):
 
 
 if __name__ == '__main__':
-    print(size_to_large(1125899906842624))
+    print(size_to_large(11258996842624))
+    print(size_to_large(77777777777))
+    print(size_to_large(1800))
+    print(size_to_large(1125000000008996842624))
+    print(size_to_large(1125899684262479165498435498))
